@@ -1,0 +1,23 @@
+{
+  "name": "meal-prep-app",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "json-server": "json-server --watch db.json --port 3001 --routes routes.json",
+    "seed": "cp db/seeds.json db.json"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "axios": "^0.21.1"
+  },
+  "author": "Your Name",
+  "license": "ISC"
+}
+

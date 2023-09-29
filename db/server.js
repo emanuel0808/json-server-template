@@ -2,10 +2,10 @@ const jsonServer = require("json-server");
 const cors = require("cors");
 const path = require("path");
 const server = jsonServer.create();
-const router = jsonServer.router(path.join(__dirname, "db", "db.json"));
-const middlewares = jsonServer.defaults();
+const router = jsonServer.router(path.join(__dirname, "db.json"));
+const middlewares = jsonServer.defaults(); // Use JSON Server's default CORS middleware
 
-server.use(cors());
+server.use(cors()); // Enable CORS
 server.use(jsonServer.bodyParser);
 server.use(middlewares);
 server.use(router);
